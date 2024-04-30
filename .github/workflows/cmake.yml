@@ -2,9 +2,9 @@ name: CMake_Build
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
   
   workflow_dispatch:
@@ -22,26 +22,26 @@ jobs:
         cmake -H. -B_build
         cmake --build _build
       shell: bash
-      working-directory: lab03/formatter_lib
+      working-directory: lab3/lab03/formatter_lib
       
     - name: Build a *formatter_ex* library
       run: |
         cmake -H. -B_build
         cmake --build _build
       shell: bash
-      working-directory: lab03/formatter_ex_lib
+      working-directory: dev/lab3/lab03/formatter_ex_lib
       
     - name: Build a *hello_world* application
       run: |
         cmake -H. -B_build
         cmake --build _build
       shell: bash
-      working-directory: lab03/hello_world_application
+      working-directory: dev/lab3/lab03/hello_world_application
       
-      
+      S
     - name: Build a *solver* application
       run: |
         cmake -H. -B_build
         cmake --build _build
       shell: bash
-      working-directory: lab03/solver_application
+      working-directory: dev/lab3/lab03/solver_application
