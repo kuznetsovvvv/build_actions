@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [ main ]
 
+  
   workflow_dispatch:
 
 jobs:
@@ -36,7 +37,7 @@ jobs:
         cmake --build _build
       shell: bash
       working-directory: lab03/hello_world_application
-
+      
       S
     - name: Build a *solver* application
       run: |
