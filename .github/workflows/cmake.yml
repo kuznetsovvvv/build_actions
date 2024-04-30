@@ -38,7 +38,7 @@ jobs:
       shell: bash
       working-directory: dev/lab3/lab03/hello_world_application
       
-      S
+      
     - name: Build a *solver* application
       run: |
         cmake -H. -B_build
